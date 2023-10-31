@@ -1,0 +1,33 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+header {
+    width:auto;
+    height:50px;
+    background-color:black;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+
+header a {
+    text-decoration: none;
+    color:#e9ecef;
+    font-weight:bold;
+}
+
+
+.cart {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:4px;
+    background-color:#f8f9fa;
+    border-radius:10px;
+    width:100px;
+}
+
