@@ -17,21 +17,21 @@ let mensSection =  [
   },
 
   {
-    id : 24jskj,
+    id : 299380,
     description : "Black Glory Hoodie",
     price : 70,
     img : "images/MensClothing/gloryHoody.jpg"
   },
 
   {
-    id : ejjajskj,
+    id : "ejjajskj",
     description : "Black Islamic Hoodie | Akhlaq",
     price : 50,
     img : "images/MensClothing/islamicHoodie.jpg"
   },
 
   {
-    id : kekkkalk,
+    id : "kekkkalk",
     description : "Unique Jubba Men Thobe",
     price :90,
     img : "images/MensClothing/JubbaMenThaub.jpg",
@@ -39,7 +39,7 @@ let mensSection =  [
   },
 
   {
-    id : jkdjwlkkxlj,
+    id : "jkdjwlkkxlj",
     description : "Light Red  Kamees ",
     price :39.99,
     img : "images/MensClothing/kamees.jpg",
@@ -47,70 +47,70 @@ let mensSection =  [
   },
 
   {
-    id : doasjlNNC,
+    id : "doasjlNNC",
     description : "Light Golden Thaub",
     price : 65,
     img : "images/MensClothing/lightGoldThaub.jpg"
   },
 
   {
-    id : ALLKDKLKL,
-    description : "Beutifull Palestinian T-shirt",
+    id : "ALLKDKLKL",
+    description : "Beautifull Palestinian T-shirt",
     price : 25,
     img : "images/MensClothing/palestineShirt.jpg"
   },
 
   {
-    id : djallkkld,
+    id : "djallkkld",
     description : "White Prayer Caps",
     price : 10,
     img : "images/MensClothing/PrayerCap.jpg"
   },
 
   {
-    id : djalallkkld,
+    id : "djalallkkld",
     description : "Dark Blue Prayer Caps",
     price : 10,
     img : "images/MensClothing/PrayerCaps.jpg"
   },
 
   {
-    id : sjldslkal,
+    id : "sjldslkal",
     description : "Red Moroccan Thobe",
     price : 40,
     img : "images/MensClothing/MoroccanThobe.jpg"
   },
 
   {
-    id : saldkklkls,
+    id : "saldkklkls",
     description : "White Red Turban",
     price : 20,
     img : "images/MensClothing/redTurban.jpg"
   },
 
   {
-    id : jllksaldsjka,
+    id : "jllksaldsjka",
     description : "Turkish Imamah Sharif",
     price : 20,
     img : "images/MensClothing/TurkishImamahSharif.jpg"
   },
 
   {
-    id : djsajjdkajc,
+    id : "djsajjdkajc",
     description : "Black Arabic Hoodie | Uthman",
     price : 40,
     img : "images/MensClothing/UthmanHoodie.jpg"
   },
 
   {
-    id : jldjdjjlksaldsjka,
+    id : "jldjdjjlksaldsjka",
     description : "Moroccan White Djellaba",
     price : 40,
     img : "images/MensClothing/WhiteDjellaba.jpg"
   },
 
   {
-    id : dajkjjdjjaljlcjjs,
+    id : "dajkjjdjjaljlcjjs",
     description : "Pure White Thobe",
     price : 40,
     img : "images/MensClothing/WhiteThaub.jpg"
@@ -210,63 +210,21 @@ let mensSection =  [
       img : "images/WomensClothing/RedKangarooBag.jpg"
   } ];
 
-
-  
-
-
-  
+  console.log(men);
 
 
+  let displayProduct = () => {
+    men.innerHTML = mensSection.map((item) => {
+        let { id, img, description } = item;
+        return `
+          <div id="product-${id}" class="item">
+            <img src="${img}" alt="">
+            <p class="description">${description}</p>
+            <button class="buy">Buy</button>
+          </div>
+        `;
+      })
+      .join("");
+  };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-]
+  displayProduct();

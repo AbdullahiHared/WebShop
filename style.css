@@ -11,11 +11,6 @@ header {
     display:flex;
     justify-content:space-around;
     align-items:center;
-
-    position:sticky;
-    top:0;
-    z-index:100;
-
 }
 
 header a {
@@ -34,4 +29,29 @@ header a {
     border-radius:3px;
     width:15%;
     height:auto;
+}
+
+.mensClothing {
+    display:grid;
+    grid-template-columns:repeat(1, 200px);
+    justify-content:space-around;
+    align-items:center;
+    text-align:center;
+}
+
+.item  img {
+    width:200px;
+    padding:20px;
+    border-radius:20px;
+}
+
+.item button {
+    background-color:#352B2B;
+    color:white;
+    border:none;
+    height:30px;
+    width:100px;
+    padding-bottom:4px;
+    border-radius:4px;
+    margin-bottom:100px;
 }
