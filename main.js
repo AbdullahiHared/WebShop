@@ -119,7 +119,7 @@ let mensSection =  [
   let womensSection =  [
     {
       id: 0,
-      description: "Beautifull Arabian shoulder Bag ",
+      description: "Arabian shoulder Bag ",
       price: 99,
       img: "images/WomensClothing/ArabianBag.jpg"
     },
@@ -157,7 +157,7 @@ let mensSection =  [
       id : 5,
       description : "Full blue Abaya",
       price :39.99,
-      img : "images\WomensClothing\FullBlueAbaya.jpg",
+      img : "images/WomensClothing/FullBlueAbaya.jpg",
   
     },
   
@@ -172,7 +172,7 @@ let mensSection =  [
       id : 7,
       description : "Full Dark Grey Jilbab",
       price : 65,
-      img : "images/WomensClothing/FullJilbabGrey.jpgg"
+      img : "images/WomensClothing/FullJilbabGrey.jpg"
     },
   
     {
@@ -188,13 +188,7 @@ let mensSection =  [
       price : 40,
       img : "images/WomensClothing/LonggreyAbaya.jpg"
     },
-  
-    {
-      id : 10,
-      description : "Patterned Winter Jacket",
-      price : 80,
-      img : "images/WomensClothing/PatternedJacket.jpg"
-    },
+
   
     {
       id : 11,
@@ -213,8 +207,8 @@ let mensSection =  [
   console.log(men);
 
 
-  let displayProduct = () => {
-    men.innerHTML = mensSection.map((item) => {
+  let displayMensProducts = () => {
+    women.innerHTML = mensSection.map((item) => {
         let { id, img, description } = item;
         return `
           <div id="product-${id}" class="item">
@@ -227,4 +221,27 @@ let mensSection =  [
       .join("");
   };
 
-  displayProduct();
+  displayMensProducts();
+
+  let displayWomensProjects = () => {
+    men.innerHTML = womensSection.map((item) => {
+        let { id, img, description } = item;
+        return `
+          <div id="product-${id}" class="item">
+            <img src="${img}" alt="">
+            <p class="description">${description}</p>
+            <button class="buy">Buy</button>
+          </div>
+        `;
+      })
+      .join("");
+  };
+
+  displayWomensProjects();
+
+
+
+
+let displayCount = ()=> {
+
+}
