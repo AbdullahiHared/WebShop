@@ -211,9 +211,9 @@ let mensSection =  [
     women.innerHTML = mensSection.map((item) => {
         let { id, img, description } = item;
         return `
+          
           <div id="product-${id}" class="item">
-            <img src="${img}" alt="">
-            <p class="description">${description}</p>
+          <img src="${img}" alt="${description}" width = "100%" height = "80%">
             <button class="buy">Buy</button>
           </div>
         `;
@@ -228,7 +228,7 @@ let mensSection =  [
         let { id, img, description } = item;
         return `
           <div id="product-${id}" class="item">
-            <img src="${img}" alt="">
+          <img src="${img}" alt="${description}" width = "100%" height = "80%">
             <p class="description">${description}</p>
             <button class="buy">Buy</button>
           </div>

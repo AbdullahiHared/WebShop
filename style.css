@@ -42,18 +42,28 @@ header a {
 .mensClothing, .womensClothing {
     display:grid;
     grid-template-columns:repeat(4, 200px);
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
     text-align:center;
-    
+    gap:10px;
+
     
 }
+
+/* .items {
+    display:grid;
+    grid-template-columns:repeat(4, 200px);
+    justify-content:space-around;
+    align-items:center;
+    gap:100px;
+} */
 .item img {
-    width:100%;
-    height:80%;
     fill:#0a2744;
-    box-shadow:1px 1px 10px black;
     padding:10px 10px;
+}
+
+.item img:hover {
+    box-shadow: rgba(229, 230, 231, 0.2) 0px 8px 24px;
 }
 
 .item {
@@ -62,7 +72,6 @@ header a {
    align-items:center;
    justify-content:center;
    height:540px;
-   gap:10px;
 }
 
 
