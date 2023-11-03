@@ -8,7 +8,7 @@
 header {
     width:auto;
     height:3.5em;
-    background-color:black;
+    background-color:#7b2cbf;
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -18,6 +18,7 @@ header a {
     text-decoration: none;
     color:#e9ecef;
     font-weight:bold;
+    margin-left:100px;
 }
 
 
@@ -50,21 +51,14 @@ header a {
     
 }
 
-/* .items {
-    display:grid;
-    grid-template-columns:repeat(4, 200px);
-    justify-content:space-around;
-    align-items:center;
-    gap:100px;
-} */
+
 .item img {
-    fill:#0a2744;
     padding:10px 10px;
+    object-fit:contain;
+    height:300px;
+    width:300px;
 }
 
-.item img:hover {
-    box-shadow: rgba(229, 230, 231, 0.2) 0px 8px 24px;
-}
 
 .item {
    display:flex;
@@ -86,6 +80,52 @@ header a {
     margin-bottom:100px;
     font-weight:bold;
 }
+
+
+
+
+
+@media only screen  and (max-width:1000px){
+    .mensClothing, .womensClothing {
+        display:grid;
+    grid-template-columns:repeat(3, 200px);
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+
+    
+    }
+
+    .item img {
+        padding:10px;
+    }
+}
+
+@media only screen  and (max-width:600px){
+    .mensClothing, .womensClothing {
+    display:grid;
+    grid-template-columns:repeat(2, 200px);
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+
+    
+    }
+
+    .item img {
+        padding:20px 10px;
+    }
+
+    header a {
+        margin-left:0;
+    }
+
+}
+
+
+
 /*
 @media only screen and (min-width: 600px) {
     .mensClothing, .womensClothing {

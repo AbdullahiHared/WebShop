@@ -4,9 +4,9 @@ let women = document.querySelector('.womensClothing');
 let mensSection =  [
   {
     id: 25455,
-    description: "Beautifull black White Thobe",
+    description: "Beautifull Gray Thobe",
     price: 50,
-    img: "images/MensClothing/BlackWhiteThauwb.jpg"
+    img: "images/MensClothing/GrayThobe.jpg"
   },
 
   {
@@ -17,17 +17,24 @@ let mensSection =  [
   },
 
   {
+    id: 488380,
+    description : "Red Emarati Thobe",
+    img : "images/MensClothing/RedThobe.jpg"
+
+  },
+
+  {
     id : 299380,
-    description : "Black Glory Hoodie",
+    description : "Pakistani  Khamis",
     price : 70,
-    img : "images/MensClothing/gloryHoody.jpg"
+    img : "images/MensClothing/pakistaniThobe.jpg"
   },
 
   {
     id : "ejjajskj",
-    description : "Black Islamic Hoodie | Akhlaq",
+    description : "Stylish Gray Juba Thobe",
     price : 50,
-    img : "images/MensClothing/islamicHoodie.jpg"
+    img : "images/MensClothing/jubaGray.jpg"
   },
 
   {
@@ -40,9 +47,9 @@ let mensSection =  [
 
   {
     id : "jkdjwlkkxlj",
-    description : "Light Red  Kamees ",
+    description : "Light Red  Kamees",
     price :39.99,
-    img : "images/MensClothing/kamees.jpg",
+    img : "images/MensClothing/blueShotThobe.jpg",
 
   },
 
@@ -50,28 +57,28 @@ let mensSection =  [
     id : "doasjlNNC",
     description : "Light Golden Thaub",
     price : 65,
-    img : "images/MensClothing/lightGoldThaub.jpg"
+    img : "images/MensClothing/jubaWhite.jpg"
   },
 
   {
     id : "ALLKDKLKL",
-    description : "Beautifull Palestinian T-shirt",
+    description : "Gray Thobe For Jumuah",
     price : 25,
-    img : "images/MensClothing/palestineShirt.jpg"
+    img : "images/MensClothing/longGray.jpg"
   },
 
   {
     id : "djallkkld",
-    description : "White Prayer Caps",
+    description : "light Yellow Thobe",
     price : 10,
-    img : "images/MensClothing/PrayerCap.jpg"
+    img : "images/MensClothing/lightYelloThobe.jpg"
   },
 
   {
     id : "djalallkkld",
-    description : "Dark Blue Prayer Caps",
+    description : "Beautifull Purple Thobe",
     price : 10,
-    img : "images/MensClothing/PrayerCaps.jpg"
+    img : "images/MensClothing/purpleThobe.jpg"
   },
 
   {
@@ -83,23 +90,16 @@ let mensSection =  [
 
   {
     id : "saldkklkls",
-    description : "White Red Turban",
+    description : "Shot Handed Thobe Gray",
     price : 20,
-    img : "images/MensClothing/redTurban.jpg"
+    img : "images/MensClothing/greyShortThobe.jpg"
   },
 
   {
     id : "jllksaldsjka",
-    description : "Turkish Imamah Sharif",
+    description : "Shot Handed Thobe white",
     price : 20,
-    img : "images/MensClothing/TurkishImamahSharif.jpg"
-  },
-
-  {
-    id : "djsajjdkajc",
-    description : "Black Arabic Hoodie | Uthman",
-    price : 40,
-    img : "images/MensClothing/UthmanHoodie.jpg"
+    img : "images/MensClothing/whiteshotThobe.jpg"
   },
 
   {
@@ -111,9 +111,9 @@ let mensSection =  [
 
   {
     id : "dajkjjdjjaljlcjjs",
-    description : "Pure White Thobe",
+    description : "Stylish Black Juba Thobe",
     price : 40,
-    img : "images/MensClothing/WhiteThaub.jpg"
+    img : "images/MensClothing/blackJubba.jpg"
   }];
 
   let womensSection =  [
@@ -126,23 +126,23 @@ let mensSection =  [
   
     {
       id : 1,
-      description : "Comfort Winter Jacket",
+      description : "Beautifull Turkish Abaya",
       price : 70,
-      img : "images/WomensClothing/ComfortWinterJacket.jpg"
+      img : "images/WomensClothing/TurkishAbaya.jpg"
     },
   
     {
       id : 2,
-      description : "Basic Daily Abaya",
+      description : "Light Brown Abaya",
       price : 20,
-      img : "images/WomensClothing/DailyAbaya.jpg"
+      img : "images/WomensClothing/lightBrownAbaya.jpg"
     },
   
     {
       id :3,
-      description : "Pure Black Abaya",
+      description : "Pure Green Abaya",
       price : 30,
-      img : "images/MensClothing/islamicHoodie.jpg"
+      img : "images/WomensClothing/GreenAbaya.jpg"
     },
   
     {
@@ -196,10 +196,11 @@ let mensSection =  [
       price : 30,
       img : "images/WomensClothing/redAbaya.jpg"
     },
+
   
     {
       id : 12,
-      description : "Turkish Imamah Sharif",
+      description : "Red Kangaroo Bag",
       price : 100,
       img : "images/WomensClothing/RedKangarooBag.jpg"
   } ];
@@ -213,7 +214,8 @@ let mensSection =  [
         return `
           
           <div id="product-${id}" class="item">
-          <img src="${img}" alt="${description}" width = "100%" height = "80%">
+          <img src="${img}" alt="${description}" width = "100%" height = "70%">
+          <p class="description">${description}</p>
             <button class="buy">Buy</button>
           </div>
         `;
@@ -238,10 +240,3 @@ let mensSection =  [
   };
 
   displayWomensProjects();
-
-
-
-
-let displayCount = ()=> {
-
-}
