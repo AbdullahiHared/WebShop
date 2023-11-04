@@ -47,9 +47,9 @@ header a {
     align-items:center;
     text-align:center;
     gap:10px;
-
     
 }
+
 
 
 .item img {
@@ -58,6 +58,14 @@ header a {
     height:300px;
     width:300px;
 }
+
+.item img:hover {
+    scale:1.08;
+    cursor:pointer;
+    transition:.4s;
+}
+
+
 
 
 .item {
@@ -70,15 +78,21 @@ header a {
 
 
 .item button {
-    background-color:#7b2cbf;
-    color:white;
-    border:none;
+    border:2px solid #7b2cbf;
+    color:#7b2cbf;
+    background-color:white;
     height:30px;
     width:100px;
     padding-bottom:4px;
     border-radius:4px;
     margin-bottom:100px;
     font-weight:bold;
+}
+
+.item button:hover {
+    background-color:#7b2cbf;
+    color:white;
+    transition:.5s;
 }
 
 
