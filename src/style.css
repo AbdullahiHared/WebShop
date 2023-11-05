@@ -135,9 +135,19 @@ header a {
 
 }
 
-.cartItems {
+.cartItem  {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    bottom:10px;
+    border-bottom:1px solid black;
+    align-items:center;
+    justify-content:space-around;
+    gap:100px;
+    padding:10%;
+    text-align:end;
+}
+.cartItem img {
+   object-fit:contain;
 }
 
 

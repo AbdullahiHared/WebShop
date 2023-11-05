@@ -23,7 +23,7 @@ let creatCartItems = () => {
         let search = [...womensSection, ...mensSection].find((x) => x.id === id);
         return `
             <div class="cartProducts">
-            <div class="cartsItem">
+            <div class="cartItem">
            <img src="${search.img}" alt="${search.description}" width="100">
            <p>${search.description}</p>
            <h3>$ ${search.price}</h3>
