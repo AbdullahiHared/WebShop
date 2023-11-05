@@ -196,16 +196,16 @@ header a {
 
 
 
-/*
-@media only screen and (min-width: 600px) {
+
+@media only screen and (max-width: 600px) {
     .mensClothing, .womensClothing {
         display:grid;
-        grid-template-columns:repeat(4, 200px);
+        grid-template-columns:repeat(1, 1fr);
         
     }
     
     .item {
-        box-shadow:1px 1px 5px black;
+
         margin:-10px;
         height:400px;
     }
@@ -225,4 +225,4 @@ header a {
         margin-bottom:100px;
         font-weight:bold;
     }
-  } */
+  } 
