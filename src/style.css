@@ -37,6 +37,11 @@ header a {
     height:auto;
 }
 
+.cart span {
+    color:#7b2cbf;
+}
+
+
 .products {
     display:flex;
     justify-content:center;
@@ -98,6 +103,43 @@ header a {
     color:white;
     transition:.5s;
 }
+
+.HomeBtn {
+    border:2px solid #7b2cbf;
+    color:#7b2cbf;
+    background-color:white;
+    height:30px;
+    width:100px;
+    padding-bottom:4px;
+    border-radius:4px;
+    margin-bottom:100px;
+    font-weight:bold;
+}
+
+.HomeBtn:hover {
+    background-color:#7b2cbf;
+    color:white;
+    transition:.5s;
+}
+
+.totalPriceInCart h2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.cartProducts {
+    display:grid;
+    grid-template-columns:repeat(1, 200px);
+    justify-content:space-around;
+    align-items:center;
+    text-align:center;
+
+}
+
+.cartItems {
+    display:flex;
+    flex-direction:column;
+}
+
 
 
 
