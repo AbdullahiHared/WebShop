@@ -128,27 +128,27 @@ header a {
 
 .cartProducts {
     display:grid;
-    grid-template-columns:repeat(1, 200px);
+    grid-template-columns:repeat(3, 1fr);
     justify-content:space-around;
     align-items:center;
-    text-align:center;
+    gap:100px;
 
 }
 
-.cartItem  {
+/* .cartItem  {
     display:flex;
     flex-direction:row;
     bottom:10px;
     border-bottom:1px solid black;
-    align-items:center;
-    justify-content:space-around;
+    align-items:start;
+    justify-content:center;
     gap:100px;
     padding:10%;
-    text-align:end;
+    text-align:start;
 }
 .cartItem img {
    object-fit:contain;
-}
+} */
 
 
 
