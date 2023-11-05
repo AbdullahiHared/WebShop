@@ -2,7 +2,6 @@ let men = document.querySelector(".mensClothing");
 let women = document.querySelector(".womensClothing");
 
 
-
 let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 // function to display mens clothes
@@ -32,7 +31,7 @@ let displayWomensProducts = () => {
       let { id, img, description } = item;
       return `
           <div id="product-${id}" class="item">
-          <img src="${img}" alt="${description}" width = "100%" height = "80%">
+          <img src="${img}" alt="${description}" width = "100">
             <p class="description">${description}</p>
             <button id = "buy"class="buy" onclick = "addToCart(${id})">Buy</button>
           </div>
@@ -67,9 +66,9 @@ let addToCart = (id) => {
 //   let search = cart.find((item) => item.id === chosenItem);
 
  
-  // cart = cart.filter((items) => items.item !== 0)
+//   cart = cart.filter((items) => items.item !== 0)
 
-    // if (search.item === undefined) return;
+//     if (search.item === undefined) return;
 
 //   if (search.item === 0) return
 //    else {

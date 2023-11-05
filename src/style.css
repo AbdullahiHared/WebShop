@@ -47,6 +47,7 @@ header a {
     justify-content:center;
     flex-direction:column;
     gap:100px;
+    border:1px solid black;
 }
 
 .mensClothing, .womensClothing {
@@ -66,10 +67,11 @@ header a {
     object-fit:contain;
     height:300px;
     width:300px;
+    
 }
 
 .item img:hover {
-    scale:1.08;
+    transform:scale(1.08);
     cursor:pointer;
     transition:.4s;
 }
@@ -127,33 +129,72 @@ header a {
 }
 
 .cartProducts {
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    justify-content:space-around;
-    align-items:center;
-    gap:100px;
-
-}
-
-/* .cartItem  {
     display:flex;
-    flex-direction:row;
-    bottom:10px;
-    border-bottom:1px solid black;
-    align-items:start;
-    justify-content:center;
-    gap:100px;
-    padding:10%;
-    text-align:start;
+    flex-direction:column;
+    gap:30px;
+    margin-top:30px;
 }
-.cartItem img {
-   object-fit:contain;
-} */
 
 
 
+.cartCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:start;
+    width: 50%;
+    margin: 0 auto; 
+    padding:10px;
+    border-bottom:1px solid black;
+}
+
+.quantitySection, .Subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    font-family:'Lato', monospace;
+}
+
+.quantitySection h3 {
+    margin-bottom:15px;
+}
+.cartBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: row;
+    gap: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color:#7b2cbf;
+    border:none;
+    color:white ;
+}
+
+.cartBtn button {
+    border: none;
+    background-color:#7b2cbf;
+    color:white;
+    font-weight:bold;
+}
+
+.cartBtn:hover {
+
+}
+
+.remove:hover {
+    color:red;
+    cursor:pointer;
+    
+}
 
 
+
+/* 
 
 @media only screen  and (max-width:1000px){
     .mensClothing, .womensClothing {
@@ -225,4 +266,4 @@ header a {
         margin-bottom:100px;
         font-weight:bold;
     }
-  } 
+  }  */

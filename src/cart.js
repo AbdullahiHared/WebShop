@@ -22,13 +22,26 @@ let creatCartItems = () => {
         // search for items in the products (men and women)
         let search = [...womensSection, ...mensSection].find((x) => x.id === id);
         return `
-            <div class="cartProducts">
-            <div class="cartItem">
-           <img src="${search.img}" alt="${search.description}" width="100">
-           <p>${search.description}</p>
-           <h3>$ ${search.price}</h3>
-          </div>
-          </div>
+           
+    <div class="cartCenter">
+    <div class="ItemImage">
+    <img src="${search.img}" alt="image" width="100">
+    <p class="name">${search.name}</p></div>
+<div class="Subtotal">
+    <h3>Subtotal</h3>
+    <h4 class="price">$${search.price}</h4>
+</div>
+
+
+    <div class="quantitySection">
+        <h3>Quantity</h3>
+        <div class="cartBtn">
+        <button class="add">+</button>
+        <div class="quantity">1</div>
+        <button class="remove"><i class="bi bi-dash"></i>-</button>
+        </div>
+    </div>
+<h2 class="remove">X</h2></div>
             `;
       })
       .join(""));
@@ -36,9 +49,11 @@ let creatCartItems = () => {
     cartProducts.innerHTML = "";
     totalPriceInCart.innerHTML = `
         <h2> No Items In the Cart</h2>
+
         <a href="/index.html"><button class = "HomeBtn">Buy Now</button></a>
 `;
   }
 };
 
 creatCartItems();
+
