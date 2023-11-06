@@ -168,7 +168,7 @@ header a {
     gap: 10px;
     width: 100px;
     height: 30px;
-    border-radius: 10px;
+    border-radius:10%;
     padding: 10px;
     background-color:#7b2cbf;
     border:none;
@@ -182,9 +182,7 @@ header a {
     font-weight:bold;
 }
 
-.cartBtn:hover {
 
-}
 
 .remove:hover {
     color:red;
