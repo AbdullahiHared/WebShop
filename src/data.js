@@ -89,6 +89,7 @@ womensSection = [
       id: 12,
       description: "Kangaroo Bag",
       price: 100,
+      name : "Kangaroo Bag",
       img: "/images/WomensClothing/RedKangarooBag.jpg",
     },
   ];

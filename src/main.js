@@ -61,23 +61,6 @@ let addToCart = (id) => {
 };
 
 
-// let removeItem= (id) => {
-//   let chosenItem = id;
-//   let search = cart.find((item) => item.id === chosenItem);
-
- 
-//   cart = cart.filter((items) => items.item !== 0)
-
-//     if (search.item === undefined) return;
-
-//   if (search.item === 0) return
-//    else {
-//     search.item -= 1;
-//   }
-
-// localStorage.setItem("data", JSON.stringify(cart));
-//   console.log(cart);
-// };
 
 
 
