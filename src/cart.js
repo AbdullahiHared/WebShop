@@ -4,6 +4,47 @@ const cartProducts = document.getElementById("cartProduct");
 const totalPriceInCart = document.getElementById("totalPriceInCart");
 let cart = JSON.parse(localStorage.getItem("data")) || [];
 
+// Function to add items to the cart
+let addItem = (id) => {
+  let chosenItem = id;
+  let search = cart.find((item) => item.id === chosenItem);
+
+  if (search === undefined) {
+    cart.push({
+      id: chosenItem,
+      item: 1,
+    });
+  } else {
+    search.item += 1;
+  }
+
+  // console.log(cart);
+  updateCart(chosenItem)
+};
+
+
+// function to remove item from the cart
+let removeItem = (id) => {
+  let chosenItem = id;
+  let search = cart.find((item) => item.id === chosenItem);
+
+  if (search === undefined) {
+    cart.push({
+      id: chosenItem,
+      item: 1,
+    });
+  }
+
+  if (search.item === 0) return;
+  
+  else {
+    search.item -= 1;
+  }
+
+  // console.log(cart);
+  updateCart(chosenItem)
+};
+
 function updateCart() {
   let totalQuantity = 0;
   let totalPrice = 0;
@@ -31,9 +72,9 @@ function updateCart() {
         <div class="quantitySection">
           <h3>Quantity</h3>
           <div class="cartBtn">
-            <button class="decrease">-</button>
+            <button class="decrease" onclick = "removeItem(${id})">-</button>
             <div class="quantity">${quantity}</div>
-            <button class="increase">+</button>
+            <button class="increase" onclick = "addItem(${id})">+</button>
           </div>
         </div>
         <img src="./trash3.svg" alt="remove item from cart" class = "remove">
@@ -52,32 +93,14 @@ function updateCart() {
       <a href="/index.html"><button class="HomeBtn">Buy Now</button></a>
     `;
   }
+
+  localStorage.setItem("data", JSON.stringify(cart));
 }
 
 updateCart();
 
-cartProducts.addEventListener("click", (event) => {
-  if (event.target.classList.contains("decrease")) {
-    decreaseItem(event.target);
-  } else if (event.target.classList.contains("increase")) {
-    increaseItem(event.target);
-  } else if (event.target.classList.contains("remove")) {
-    // Implement remove item logic
-  }
-});
 
-function increaseItem(increaseButton) {
-  const quantityElement = increaseButton.parentElement.querySelector(".quantity");
-  const quantity = parseInt(quantityElement.textContent);
-  quantityElement.textContent = quantity + 1;
-  updateCart(); // Update the cart after changing quantity
-}
 
-function decreaseItem(decreaseButton) {
-  const quantityElement = decreaseButton.parentElement.querySelector(".quantity");
-  const quantity = parseInt(quantityElement.textContent);
-  if (quantity > 1) {
-    quantityElement.textContent = quantity - 1;
-    updateCart(); // Update the cart after changing quantity
-  }
-}
+
+
+

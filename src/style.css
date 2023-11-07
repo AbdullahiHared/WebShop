@@ -1,3 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Serif&family=Open+Sans&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+
+
 * {
     padding:0;
     margin:0;
@@ -37,6 +42,10 @@ header a, a {
     color:#7b2cbf;
 }
 
+
+.title {
+  right:100%;
+}   
 
 .products {
     display:flex;
@@ -121,7 +130,7 @@ header a, a {
 }
 
 .totalPriceInCart h2 {
-    font-family:'Roboto Mono', monospace;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .cartProducts {
@@ -150,7 +159,7 @@ header a, a {
     justify-content: center;
     align-items: center;
     gap:60px;
-    font-family:'Lato', monospace;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .quantitySection h3 {
@@ -268,7 +277,7 @@ footer {
         font-size:1em;
      }
 
-     .cartCenter h2 {
+     .cartCenter .remove {
       font-style:2em;
      }
 
