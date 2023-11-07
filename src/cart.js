@@ -15,7 +15,7 @@ function updateCart() {
       const search = [...womensSection, ...mensSection].find((x) => x.id === id);
       // Calculate subtotal for each item
       const subtotal = search.price * quantity;
-      totalPrice += subtotal;
+      totalPrice += Math.round(subtotal);
       totalQuantity += quantity;
 
       return `
