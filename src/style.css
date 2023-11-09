@@ -15,9 +15,13 @@ header {
     height:3.5em;
     background-color:#7b2cbf;
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
+    gap:13%;
+    margin-right:10px;
 }
+
+
 
 header a, a {
     text-decoration: none;
@@ -34,8 +38,8 @@ header a, a {
     gap:4px;
     background-color:#f8f9fa;
     border-radius:3px;
-    width:15%;
-    height:auto;
+    width:4%;
+    height: 0 auto;
 }
 
 .cart span {
@@ -43,9 +47,9 @@ header a, a {
 }
 
 
-.title {
+/* .title {
   right:100%;
-}   
+}    */
 
 .products {
     display:flex;
@@ -121,6 +125,7 @@ header a, a {
     border-radius:4px;
     margin-bottom:100px;
     font-weight:bold;
+    margin-right:100px;
 }
 
 .HomeBtn:hover {
@@ -189,12 +194,11 @@ header a, a {
 
 
 
-.remove:hover {
-    color:red;
-    cursor:pointer;
-    
+.deleteItem {
+    border:none;
+    background-color:white;
+    font-weight:bold;
 }
-
 footer {
     width:auto;
     height:3.5em;
@@ -220,6 +224,10 @@ footer {
     gap:10px;
 
     
+    }
+
+    .cart {
+        width:10%;
     }
 
     .item img {
@@ -252,6 +260,10 @@ footer {
     gap:10px;
 
     
+    }
+
+    .cart {
+        width:10%;
     }
 
     .item img {

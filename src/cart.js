@@ -18,7 +18,7 @@ let addItem = (id) => {
     search.item += 1;
   }
 
-  // console.log(cart);
+  console.log(cart);
   updateCart(chosenItem)
 };
 
@@ -28,22 +28,33 @@ let removeItem = (id) => {
   let chosenItem = id;
   let search = cart.find((item) => item.id === chosenItem);
 
-  if (search === undefined) {
-    cart.push({
-      id: chosenItem,
-      item: 1,
-    });
+  if (search === undefined || search.item === 0) {
+    // If the item is not in the cart or its quantity is 0, do nothing
+    return;
   }
 
-  if (search.item === 0) return;
-  
-  else {
-    search.item -= 1;
+  search.item -= 1;
+
+  if (search.item === 0) {
+    // If the item quantity becomes 0, remove the item from the cart
+    cart = cart.filter((item) => item.id !== chosenItem);
   }
 
-  // console.log(cart);
-  updateCart(chosenItem)
+  updateCart(chosenItem);
 };
+
+
+let deleteItem = (id) => {
+  let chosenItem = id;
+  let index = cart.findIndex((item) => item.id === chosenItem);
+
+  if (index !== -1) {
+    // If the item is found in the cart, remove it
+    cart.splice(index, 1);
+    updateCart(chosenItem);
+  }
+};
+ 
 
 function updateCart() {
   let totalQuantity = 0;
@@ -77,7 +88,7 @@ function updateCart() {
             <button class="increase" onclick = "addItem(${id})">+</button>
           </div>
         </div>
-        <img src="./trash3.svg" alt="remove item from cart" class = "remove">
+        <button class="deleteItem" onclick="deleteItem(${id})"><img src="./deleteitem.svg" alt=""></button>
       </div>`;
     })
     .join("");
