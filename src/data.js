@@ -30,7 +30,7 @@ womensSection = [
       description: "Pure Green Abaya",
       price: 30,
       name : "Green Abaya",
-      img: "./images/WomensClothing/GreenAbaya.jpg",
+      img: "./images/WomensClothing/GreenAbaya.png",
     },
   
     {
@@ -38,7 +38,7 @@ womensSection = [
       description: "Double Jilbab and Abaya",
       price: 120,
       name : "Double Jilbab",
-      img: "./images/WomensClothing/Double Jilbab and Abaya.jpg",
+      img: "./images/WomensClothing/Double Jilbab and Abaya.png",
     },
   
     {
@@ -54,7 +54,7 @@ womensSection = [
       description: "Modest Forest Green Abaya",
       price: 45,
       name : "Modest Green Abaya",
-      img: "./images/WomensClothing/FulljilabForestGreen.jpg",
+      img: "./images/WomensClothing/FulljilabForestGreen.png",
     },
   
     {
@@ -62,7 +62,7 @@ womensSection = [
       description: "Full Dark Grey Jilbab",
       price: 65,
       name : "Grey Jilbab",
-      img: "./images/WomensClothing/FullJilbabGrey.jpg",
+      img: "./images/WomensClothing/FullJilbabGrey.png",
     },
   
     {

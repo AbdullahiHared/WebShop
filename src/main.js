@@ -6,16 +6,16 @@ let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 // function to display mens clothes
 let displayMensProducts = () => {
-  women.innerHTML = mensSection
+  men.innerHTML = mensSection
     .map((item) => {
-      let { id, img, description } = item;
+      let { id, img, description, price } = item;
       let search = cart.find((item) => item.id === id) || [];
       return `
           
           <div id="product-${id}" class="item">
           <img src="${img}" alt="${description}" width = "100%" height = "70%">
           <p class="description">${description}</p>
-          <button id = "buy"class="buy" onclick = "addToCart(${id})">Buy</button>
+          <button id = "buy"class="buy" onclick = "addToCart(${id})">$${price}</button>
           </div>
         `;
     })
@@ -26,18 +26,19 @@ displayMensProducts();
 
 // function to display women's clothes
 let displayWomensProducts = () => {
-  men.innerHTML = womensSection
+  women.innerHTML = womensSection
     .map((item) => {
-      let { id, img, description } = item;
+      let { id, img, description, price } = item;
       return `
           <div id="product-${id}" class="item">
           <img src="${img}" alt="${description}" width = "100">
             <p class="description">${description}</p>
-            <button id = "buy"class="buy" onclick = "addToCart(${id})">Buy</button>
+            <button id = "buy"class="buy" onclick = "addToCart(${id})">$${price}</button>
           </div>
         `;
     })
     .join("");
+
 };
 
 displayWomensProducts();
@@ -59,10 +60,6 @@ let addToCart = (id) => {
   // console.log(cart);
   totalItems(chosenItem)
 };
-
-
-
-
 
 // Function to update the quantity of items in the cart
 let totalItems = (id) => {

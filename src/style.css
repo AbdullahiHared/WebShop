@@ -1,309 +1,267 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Serif&family=Open+Sans&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Serif&family=Open+Sans&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
 
 * {
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    text-align:center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 header {
-    width:auto;
-    height:3.5em;
-    background-color:#7b2cbf;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:13%;
-    margin-right:10px;
+  width:100vw;
+  height: 3.5em;
+  background-color: #7b2cbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20%;
+  margin-right: 10px;
 }
 
-
-
-header a, a {
-    text-decoration: none;
-    color:#e9ecef;
-    font-weight:bold;
-    margin-left:100px;
+header a {
+  text-decoration: none;
+  color: #e9ecef;
+  font-weight: bold;
+  margin-left: 100px;
 }
-
 
 .cart {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:4px;
-    background-color:#f8f9fa;
-    border-radius:3px;
-    width:4%;
-    height: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  width: 4%;
+  height: auto;
 }
 
 .cart span {
-    color:#7b2cbf;
+  color: #7b2cbf;
 }
-
-
-/* .title {
-  right:100%;
-}    */
 
 .products {
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    gap:100px;
-    border:1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  border: 1px solid black;
 }
 
-.mensClothing, .womensClothing {
-    display:grid;
-    grid-template-columns:repeat(4, 200px);
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    gap:10px;
-    
+.mensClothing,
+.womensClothing {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
-
-
 
 .item img {
-    padding:10px 10px;
-    object-fit:contain;
-    height:300px;
-    width:300px;
-    
+  padding: 10px;
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
 }
 
 .item img:hover {
-    transform:scale(1.08);
-    cursor:pointer;
-    transition:.4s;
+  transform: scale(1.08);
+  cursor: pointer;
+  transition: 0.4s;
 }
-
-
-
 
 .item {
-   display:flex;
-   flex-direction:column;
-   align-items:center;
-   justify-content:center;
-   height:540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 540px;
 }
 
-
 .item button {
-    border:2px solid #7b2cbf;
-    color:#7b2cbf;
-    background-color:white;
-    height:30px;
-    width:100px;
-    padding-bottom:4px;
-    border-radius:4px;
-    margin-bottom:100px;
-    font-weight:bold;
+  border: 2px solid #7b2cbf;
+  color: #7b2cbf;
+  background-color: white;
+  height: 30px;
+  width: 100px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  margin-bottom: 100px;
+  font-weight: bold;
 }
 
 .item button:hover {
-    background-color:#7b2cbf;
-    color:white;
-    transition:.5s;
+  background-color: #7b2cbf;
+  color: white;
+  transition: 0.5s;
 }
 
 .HomeBtn {
-    border:2px solid #7b2cbf;
-    color:#7b2cbf;
-    background-color:white;
-    height:30px;
-    width:100px;
-    padding-bottom:4px;
-    border-radius:4px;
-    margin-bottom:100px;
-    font-weight:bold;
-    margin-right:100px;
+  border: 2px solid #7b2cbf;
+  color: #7b2cbf;
+  background-color: white;
+  height: 30px;
+  width: 100px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  margin-bottom: 100px;
+  font-weight: bold;
 }
 
 .HomeBtn:hover {
-    background-color:#7b2cbf;
-    color:white;
-    transition:.5s;
+  background-color: #7b2cbf;
+  color: white;
+  transition: 0.5s;
 }
 
 .totalPriceInCart h2 {
-    font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  margin:0 auto;
 }
 
 .cartProducts {
-    display:flex;
-    flex-direction:column;
-    gap:30px;
-    margin-top:30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
 }
-
-
 
 .cartCenter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:start;
-    width: 50%;
-    margin: 0 auto; 
-    padding:10px;
-    border-bottom:1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
 
-.quantitySection, .Subtotal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:60px;
-    font-family: 'Bebas Neue', sans-serif;
+.quantitySection,
+.Subtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .quantitySection h3 {
-    margin-bottom:15px;
+  margin-bottom: 15px;
 }
+
 .cartBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: row;
-    gap: 10px;
-    width: 100px;
-    height: 30px;
-    border-radius:10%;
-    padding: 10px;
-    background-color:#7b2cbf;
-    border:none;
-    color:white ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: #7b2cbf;
+  border: none;
+  color: white;
 }
 
 .cartBtn button {
-    border: none;
-    background-color:#7b2cbf;
-    color:white;
-    font-weight:bold;
+  border: none;
+  background-color: #7b2cbf;
+  color: white;
+  font-weight: bold;
 }
-
-
 
 .deleteItem {
-    border:none;
-    background-color:white;
-    font-weight:bold;
+  border: none;
+  background-color: white;
+  transition:.5s;
 }
+
 footer {
-    width:auto;
-    height:3.5em;
-    background-color:#7b2cbf;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-
+  width: auto;
+  height: 3.5em;
+  background-color: #7b2cbf;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
+@media only screen and (max-width: 1000px) {
+  .mensClothing,
+  .womensClothing {
+    grid-template-columns: repeat(3, 200px);
+  }
 
+  .cart {
+    width: 10%;
+  }
 
- 
+  .item img {
+    padding: 20px 10px;
+  }
 
-@media only screen  and (max-width:1000px){
-    .mensClothing, .womensClothing {
-        display:grid;
-    grid-template-columns:repeat(3, 200px);
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    gap:10px;
+  header a {
+    margin-left: 0;
+  }
 
-    
-    }
+  .cartCenter {
+    gap: 1em;
+    padding: 10px;
+  }
 
-    .cart {
-        width:10%;
-    }
+  .cartCenter h3 {
+    font-size: 1em;
+  }
 
-    .item img {
-        padding:10px;
-    }
+  .cartCenter .remove {
+    font-size: 2em;
+  }
 
-    .item .description {
-        font-size:14px;
-    }
-
-    
-    .cartCenter {
-        display:flex;
-        flex-direction:row;
-        gap:10px;
-        padding:19px;
-        padding:10 10px;
-     }
-
-
+  .cartCenter h2,
+  .cartBtn {
+    margin-left: 20px;
+    margin-top: -8px;
+  }
 }
 
-@media only screen  and (max-width:600px){
-    .mensClothing, .womensClothing {
-    display:grid;
-    grid-template-columns:repeat(2, 200px);
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    gap:10px;
+@media only screen and (max-width: 600px) {
+  .mensClothing,
+  .womensClothing {
+    grid-template-columns: repeat(2, 200px);
+  }
 
+  .cart {
+    width: 10%;
+  }
+
+  .item img {
     
-    }
+  }
 
-    .cart {
-        width:10%;
-    }
+  header a {
+    margin-left: 0;
+  }
 
-    .item img {
-        padding:20px 10px;
-    }
+  .cartCenter {
+    gap: 1em;
+    padding: 10px;
+  }
 
-    header a {
-        margin-left:0;
-    }
+  .cartCenter h3 {
+    font-size: 1em;
+  }
 
-    .cartCenter {
-        display:flex;
-        flex-direction:row;
-        gap:1em;
-        padding:19px;
-        width: 10%;
-        margin: 0 auto; 
-        padding:10px;
-        border-radius:1px solid blue;
-     }
+  .cartCenter .remove {
+    font-size: 2em;
+  }
 
-     .cartCenter h3 {
-        font-size:1em;
-     }
-
-     .cartCenter .remove {
-      font-style:2em;
-     }
-
-     .cartCenter h2, .cartBtn {
-        margin-left:20px;
-        margin:0 auto;
-        margin-top:-8px;
-     }
-
-     
-
-
-
-
-
+  .cartCenter h2,
+  .cartBtn {
+    margin-left: 20px;
+    margin-top: -8px;
+  }
 }
-

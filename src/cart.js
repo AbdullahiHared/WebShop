@@ -100,7 +100,7 @@ function updateCart() {
   if (cart.length === 0) {
     cartProducts.innerHTML = "";
     totalPriceInCart.innerHTML = `
-      <h2>No Items In the Cart</h2>
+      <h2>No Items Found</h2>
       <a href="/index.html"><button class="HomeBtn">Buy Now</button></a>
     `;
   }
