@@ -1,3 +1,4 @@
+
 let men = document.querySelector(".mensClothing");
 let women = document.querySelector(".womensClothing");
 
@@ -31,7 +32,7 @@ let displayWomensProducts = () => {
       let { id, img, description, price } = item;
       return `
           <div id="product-${id}" class="item">
-          <img src="${img}" alt="${description}" width = "100">
+          <img src="${img}" alt="${description}" width = "100" height = "auto">
             <p class="description">${description}</p>
             <button id = "buy"class="buy" onclick = "addToCart(${id})">$${price}</button>
           </div>
@@ -57,7 +58,6 @@ let addToCart = (id) => {
     search.item += 1;
   }
 
-  // console.log(cart);
   totalItems(chosenItem)
 };
 

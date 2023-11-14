@@ -109,6 +109,13 @@ header a {
   font-weight: bold;
 }
 
+#home {
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  text-decoration:none;
+}
+
 .HomeBtn:hover {
   background-color: #7b2cbf;
   color: white;

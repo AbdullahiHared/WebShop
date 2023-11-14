@@ -1,0 +1,24 @@
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!--
+     created with Free Online Sitemap Generator www.xml-sitemaps.com 
+    -->
+    <url>
+    <loc>https://abdullahihared.github.io/E-shopProkect/</loc>
+    <lastmod>2023-11-13T07:23:33+00:00</lastmod>
+    <priority>1.00</priority>
+    </url>
+    <url>
+    <loc>
+    https://abdullahihared.github.io/E-shopProkect/index.html
+    </loc>
+    <lastmod>2023-11-13T07:23:33+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>
+    https://abdullahihared.github.io/E-shopProkect/cart.html
+    </loc>
+    <lastmod>2023-11-13T07:23:33+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    </urlset>
