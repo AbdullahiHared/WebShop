@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 header {
@@ -25,6 +26,13 @@ header a {
   margin-left: 100px;
 }
 
+.quote {
+  border-left: 1px solid #975252;
+  text-align:center;
+   margin-top:10px;
+
+}
+
 .cart {
   display: flex;
   justify-content: center;
@@ -32,7 +40,7 @@ header a {
   gap: 4px;
   background-color: #f8f9fa;
   border-radius: 3px;
-  width: 4%;
+  width:7%;
   height: auto;
 }
 
@@ -41,11 +49,7 @@ header a {
 }
 
 .products {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 100px;
-  border: 1px solid black;
+  margin-top:100px;
 }
 
 .mensClothing,
@@ -56,6 +60,7 @@ header a {
   align-items: center;
   text-align: center;
   gap: 10px;
+  border:none;
 }
 
 .item img {
@@ -107,6 +112,7 @@ header a {
   border-radius: 4px;
   margin-bottom: 100px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #home {
@@ -123,7 +129,6 @@ header a {
 }
 
 .totalPriceInCart h2 {
-  font-family: 'Bebas Neue', sans-serif;
   margin:0 auto;
 }
 
@@ -152,7 +157,6 @@ header a {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  font-family: 'Bebas Neue', sans-serif;
 }
 
 .quantitySection h3 {
@@ -185,6 +189,7 @@ header a {
   border: none;
   background-color: white;
   transition:.5s;
+  cursor: pointer;
 }
 
 footer {
@@ -204,7 +209,7 @@ footer {
   }
 
   .cart {
-    width: 10%;
+    width:10%;
   }
 
   .item img {
@@ -215,18 +220,7 @@ footer {
     margin-left: 0;
   }
 
-  .cartCenter {
-    gap: 1em;
-    padding: 10px;
-  }
-
-  .cartCenter h3 {
-    font-size: 1em;
-  }
-
-  .cartCenter .remove {
-    font-size: 2em;
-  }
+  
 
   .cartCenter h2,
   .cartBtn {
@@ -238,11 +232,12 @@ footer {
 @media only screen and (max-width: 600px) {
   .mensClothing,
   .womensClothing {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(1, 200px);
   }
 
   .cart {
-    width: 10%;
+    width:15%;
+    margin-left:13%;
   }
 
   .item img {
@@ -262,13 +257,12 @@ footer {
     font-size: 1em;
   }
 
-  .cartCenter .remove {
-    font-size: 2em;
+  .cartBtn {
+    width:57px;
   }
 
-  .cartCenter h2,
-  .cartBtn {
-    margin-left: 20px;
-    margin-top: -8px;
-  }
+}
+
+@media only screen and (max-width: 400px) {
+  
 }

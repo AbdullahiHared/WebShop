@@ -46,7 +46,7 @@ womensSection = [
       description: "Full blue Abaya",
       price: 39.99,
       name : "Blue Abaya",
-      img: "./images/WomensClothing/FullBlueAbaya.jpg",
+      img: "./images/WomensClothing/FullBlueAbaya.png",
     },
   
     {
@@ -70,14 +70,14 @@ womensSection = [
       description: "Light Brown Jilbab",
       price: 65,
       name : "Chocolate Abaya",
-      img: "./images/WomensClothing/FullJilbabLightBrown.jpg",
+      img: "./images/WomensClothing/FullJilbabLightBrown.png",
     },
   
     {
       id: 9,
       description: "Long Abaya",
       price: 40,
-      img: "./images/WomensClothing/LonggreyAbaya.jpg",
+      img: "./images/WomensClothing/LonggreyAbaya.png",
     },
   
     {
@@ -92,7 +92,7 @@ womensSection = [
       description: "Kangaroo Bag",
       price: 100,
       name : "Kangaroo Bag",
-      img: "./images/WomensClothing/RedKangarooBag.jpg",
+      img: "./images/WomensClothing/RedKangarooBag.png",
     },
   ];
 
@@ -111,7 +111,7 @@ womensSection = [
       description: "Stylish Blue Thobe",
       price: 40,
       name : "Blue Thobe",
-      img: "./images/MensClothing/BlueThaub.jpg",
+      img: "./images/MensClothing/BlueThaub.png",
     },
   
     {
@@ -119,7 +119,7 @@ womensSection = [
       description: "Red Emarati Thobe",
       price : 39,
       name : "Emarati Thobe",
-      img: "./images/MensClothing/RedThobe.jpg",
+      img: "./images/MensClothing/RedThobe.png",
   
     },
   
@@ -152,7 +152,7 @@ womensSection = [
       description: "Unique Jubba Men Thobe",
       price: 90,
       name : "Juba Thobe",
-      img: "./images/MensClothing/JubbaMenThaub.jpg",
+      img: "./images/MensClothing/JubbaMenThaub.png",
     },
   
     {
@@ -176,7 +176,7 @@ womensSection = [
       description: "Gray Thobe For Jumuah",
       price: 25,
       name : "Jumuah Thobe",
-      img: "./images/MensClothing/longGray.jpg",
+      img: "./images/MensClothing/longGray.png",
     },
   
     {
@@ -205,7 +205,7 @@ womensSection = [
   
     {
       id: 2300924010,
-      description: "Shot Handed Thobe Gray",
+      description: "Short Handed Thobe Gray",
       price: 20,
       name : "Shortified Thobe",
       img: "./images/MensClothing/greyShortThobe.jpg",
@@ -213,7 +213,7 @@ womensSection = [
   
     {
       id: 390409090,
-      description: "Shot Handed Thobe white",
+      description: "Short Handed Thobe white",
       price: 20,
       name : "Shortified Thobe",
       img: "./images/MensClothing/whiteshotThobe.jpg",
