@@ -128,8 +128,9 @@ header a {
   transition: 0.5s;
 }
 
-.totalPriceInCart h2 {
-  margin:0 auto;
+.totalItemsInCart {
+  color:red;
+  font-size:larger;
 }
 
 .cartProducts {

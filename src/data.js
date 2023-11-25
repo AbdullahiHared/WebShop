@@ -157,7 +157,7 @@ womensSection = [
   
     {
       id: 44444,
-      description: "Light Red  Kamees",
+      description: "Light Blue  Kamees",
       price: 39.99,
       name : "Juba Thobe",
       img: "./images/MensClothing/blueShotThobe.jpg",

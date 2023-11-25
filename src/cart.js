@@ -1,17 +1,18 @@
 
 
 const cartProducts = document.getElementById("cartProduct");
-const totalPriceInCart = document.getElementById("totalPriceInCart");
+const totalItemsInCart = document.getElementById("totalItemsInCart");
 let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 // Function to add items to the cart
-let addItem = (id) => {
-  let chosenItem = id;
-  let search = cart.find((item) => item.id === chosenItem);
-
+const addItem = (id) => {
+let selectedItem = id;
+  // find item id
+  let search = cart.find((item) => item.id === selectedItem);
+  console.log(selectedItem);
   if (search === undefined) {
     cart.push({
-      id: chosenItem,
+      id: selectedItem,
       item: 1,
     });
   } else {
@@ -19,14 +20,14 @@ let addItem = (id) => {
   }
 
   console.log(cart);
-  updateCart(chosenItem)
+  updateCart(selectedItem)
 };
 
 
 // function to remove item from the cart
 let removeItem = (id) => {
-  let chosenItem = id;
-  let search = cart.find((item) => item.id === chosenItem);
+  let selectedItem = id;
+  let search = cart.find((item) => item.id === selectedItem);
 
   if (search === undefined || search.item === 0) {
     // If the item is not in the cart or its quantity is 0, do nothing
@@ -34,24 +35,24 @@ let removeItem = (id) => {
   }
 
   search.item -= 1;
-
+  
+   // If the item quantity becomes 0, remove the (selected)item from the cart
   if (search.item === 0) {
-    // If the item quantity becomes 0, remove the item from the cart
-    cart = cart.filter((item) => item.id !== chosenItem);
+    cart = cart.filter((item) => item.id !== selectedItem);
   }
 
-  updateCart(chosenItem);
+  updateCart(selectedItem);
 };
 
 
 let deleteItem = (id) => {
-  let chosenItem = id;
-  let index = cart.findIndex((item) => item.id === chosenItem);
-
+  let selectedItem = id;
+  let index = cart.findIndex((item) => item.id === selectedItem);
+  console.log(index)
   if (index !== -1) {
     // If the item is found in the cart, remove it
     cart.splice(index, 1);
-    updateCart(chosenItem);
+    updateCart(selectedItem);
   }
 };
  
@@ -94,12 +95,12 @@ function updateCart() {
     .join("");
 
   // Update the total price and total quantity
-  totalPriceInCart.innerHTML = `<h2>Total Price: $${totalPrice}</h2>`;
+  totalItemsInCart.textContent = "TOTAL" + "$" + totalPrice;
   document.getElementById("CartCounter").textContent = totalQuantity;
 
   if (cart.length === 0) {
     cartProducts.innerHTML = "";
-    totalPriceInCart.innerHTML = `
+    totalItemsInCart.innerHTML = `
       <h2>No Items Found</h2>
       <a href="/index.html"><button class="HomeBtn">Buy Now</button></a>
     `;
