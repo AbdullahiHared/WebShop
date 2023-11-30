@@ -9,7 +9,6 @@ const addItem = (id) => {
 let selectedItem = id;
   // find item id
   let search = cart.find((item) => item.id === selectedItem);
-  console.log(selectedItem);
   if (search === undefined) {
     cart.push({
       id: selectedItem,
@@ -19,7 +18,6 @@ let selectedItem = id;
     search.item += 1;
   }
 
-  console.log(cart);
   updateCart(selectedItem)
 };
 
@@ -102,7 +100,7 @@ function updateCart() {
     cartProducts.innerHTML = "";
     totalItemsInCart.innerHTML = `
       <h2>No Items Found</h2>
-      <a href="/index.html"><button class="HomeBtn">Buy Now</button></a>
+      <a href="./index.html"><button class="HomeBtn">Buy Now</button></a>
     `;
   }
 
