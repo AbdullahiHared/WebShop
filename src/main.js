@@ -26,7 +26,7 @@ let displayWomensProducts = () => {
       let { id, img, description, price } = item;
       return `
         <div id="product-${id}" class="item">
-          <img src="${img}" alt="${description}" width="100%" height="auto">
+          <img src="${img}" alt="${description}" width="300" height="300">
           <p class="description">${description}</p>
           <button class="buy" onclick="addToCart(${id})">$${price}</button>
         </div>
