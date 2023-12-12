@@ -224,7 +224,7 @@ womensSection = [
       description: "Stylish Black Juba Thobe",
       price: 40,
       name : "Juba Thobe",
-      img: "./images/MensClothing/blackJubba.WEBP",
+      img: "./images/MensClothing/blackJubba.webp",
     },
   ];
   
