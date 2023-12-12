@@ -6,7 +6,7 @@ womensSection = [
       description: "Arabian shoulder Bag ",
       price: 99,
       name : "Arabian Bag",
-      img: "./images/WomensClothing/ArabianBag.jpg",
+      img: "./images/WomensClothing/ArabianBag.WEBP",
     },
   
     {
@@ -14,7 +14,7 @@ womensSection = [
       description: "Beautifull Turkish Abaya",
       price: 70,
       name : "Turkish Abaya",
-      img: "./images/WomensClothing/TurkishAbaya.jpg",
+      img: "./images/WomensClothing/TurkishAbaya.WEBP",
     },
   
     {
@@ -22,7 +22,7 @@ womensSection = [
       description: "Light Brown Abaya",
       price: 20,
       name : "Brownie Abaya",
-      img: "./images/WomensClothing/lightBrownAbaya.jpg",
+      img: "./images/WomensClothing/lightBrownAbaya.WEBP",
     },
   
     {
@@ -30,7 +30,7 @@ womensSection = [
       description: "Pure Green Abaya",
       price: 30,
       name : "Green Abaya",
-      img: "./images/WomensClothing/GreenAbaya.png",
+      img: "./images/WomensClothing/GreenAbaya.WEBP",
     },
   
     {
@@ -38,7 +38,7 @@ womensSection = [
       description: "Double Jilbab and Abaya",
       price: 120,
       name : "Double Jilbab",
-      img: "./images/WomensClothing/Double Jilbab and Abaya.png",
+      img: "./images/WomensClothing/Double Jilbab and Abaya.WEBP",
     },
   
     {
@@ -46,7 +46,7 @@ womensSection = [
       description: "Full blue Abaya",
       price: 39.99,
       name : "Blue Abaya",
-      img: "./images/WomensClothing/FullBlueAbaya.png",
+      img: "./images/WomensClothing/FullBlueAbaya.WEBP",
     },
   
     {
@@ -54,7 +54,7 @@ womensSection = [
       description: "Modest Forest Green Abaya",
       price: 45,
       name : "Modest Green Abaya",
-      img: "./images/WomensClothing/FulljilabForestGreen.png",
+      img: "./images/WomensClothing/FulljilabForestGreen.WEBP",
     },
   
     {
@@ -62,7 +62,7 @@ womensSection = [
       description: "Full Dark Grey Jilbab",
       price: 65,
       name : "Grey Jilbab",
-      img: "./images/WomensClothing/FullJilbabGrey.png",
+      img: "./images/WomensClothing/FullJilbabGrey.WEBP",
     },
   
     {
@@ -70,21 +70,21 @@ womensSection = [
       description: "Light Brown Jilbab",
       price: 65,
       name : "Chocolate Abaya",
-      img: "./images/WomensClothing/FullJilbabLightBrown.png",
+      img: "./images/WomensClothing/FullJilbabLightBrown.WEBP",
     },
   
     {
       id: 9,
       description: "Long Abaya",
       price: 40,
-      img: "./images/WomensClothing/LonggreyAbaya.png",
+      img: "./images/WomensClothing/LonggreyAbaya.WEBP",
     },
   
     {
       id: 11,
       description: "Red Abaya",
       price: 30,
-      img: "./images/WomensClothing/redAbaya.jpg",
+      img: "./images/WomensClothing/redAbaya.WEBP",
     },
   
     {
@@ -92,7 +92,7 @@ womensSection = [
       description: "Kangaroo Bag",
       price: 100,
       name : "Kangaroo Bag",
-      img: "./images/WomensClothing/RedKangarooBag.png",
+      img: "./images/WomensClothing/RedKangarooBag.WEBP",
     },
   ];
 
@@ -103,7 +103,7 @@ womensSection = [
       description: "Beautifull Gray Thobe",
       price: 50,
       name : "Gray Thobe",
-      img: "./images/MensClothing/GrayThobe.jpg",
+      img: "./images/MensClothing/GrayThobe.WEBP",
     },
   
     {
@@ -111,7 +111,7 @@ womensSection = [
       description: "Stylish Blue Thobe",
       price: 40,
       name : "Blue Thobe",
-      img: "./images/MensClothing/BlueThaub.png",
+      img: "./images/MensClothing/BlueThaub.WEBP",
     },
   
     {
@@ -119,7 +119,7 @@ womensSection = [
       description: "Red Emarati Thobe",
       price : 39,
       name : "Emarati Thobe",
-      img: "./images/MensClothing/RedThobe.png",
+      img: "./images/MensClothing/RedThobe.WEBP",
   
     },
   
@@ -128,7 +128,7 @@ womensSection = [
       description: "Pakistani  Khamis",
       price: 70,
       name : "Salwar Khamis",
-      img: "./images/MensClothing/pakistaniThobe.jpg",
+      img: "./images/MensClothing/pakistaniThobe.WEBP",
     },
   
     {
@@ -136,7 +136,7 @@ womensSection = [
       description: "Stylish Gray Juba Thobe",
       price: 50,
       name : "Juba Thobe",
-      img: "./images/MensClothing/jubaGray.jpg",
+      img: "./images/MensClothing/jubaGray.WEBP",
     },
   
     {
@@ -144,7 +144,7 @@ womensSection = [
       description: "Buttoned Black Juba Thobe",
       price: 39.9,
       name : "Juba Thobe",
-      img: "./images/MensClothing/jubba black.jpg",
+      img: "./images/MensClothing/jubba black.WEBP",
     },
   
     {
@@ -152,7 +152,7 @@ womensSection = [
       description: "Unique Jubba Men Thobe",
       price: 90,
       name : "Juba Thobe",
-      img: "./images/MensClothing/JubbaMenThaub.png",
+      img: "./images/MensClothing/JubbaMenThaub.WEBP",
     },
   
     {
@@ -160,7 +160,7 @@ womensSection = [
       description: "Light Blue  Kamees",
       price: 39.99,
       name : "Juba Thobe",
-      img: "./images/MensClothing/blueShotThobe.jpg",
+      img: "./images/MensClothing/blueShotThobe.WEBP",
     },
   
     {
@@ -168,7 +168,7 @@ womensSection = [
       description: "Light Golden Thaub",
       price: 65,
       name : "Juba Thobe",
-      img: "./images/MensClothing/jubaWhite.jpg",
+      img: "./images/MensClothing/jubaWhite.WEBP",
     },
   
     {
@@ -176,7 +176,7 @@ womensSection = [
       description: "Gray Thobe For Jumuah",
       price: 25,
       name : "Jumuah Thobe",
-      img: "./images/MensClothing/longGray.png",
+      img: "./images/MensClothing/longGray.WEBP",
     },
   
     {
@@ -184,7 +184,7 @@ womensSection = [
       description: "light Yellow Thobe",
       price: 10,
       name : "Light Y Thobe",
-      img: "./images/MensClothing/lightYelloThobe.jpg",
+      img: "./images/MensClothing/lightYelloThobe.WEBP",
     },
   
     {
@@ -192,7 +192,7 @@ womensSection = [
       description: "Beautifull Purple Thobe",
       price: 10,
       name : "Purple  Thobe",
-      img: "./images/MensClothing/purpleThobe.jpg",
+      img: "./images/MensClothing/purpleThobe.WEBP",
     },
   
     {
@@ -200,7 +200,7 @@ womensSection = [
       description: "Red Moroccan Thobe",
       price: 40,
       name : "Moroccan Thobe",
-      img: "./images/MensClothing/MoroccanThobe.jpg",
+      img: "./images/MensClothing/MoroccanThobe.WEBP",
     },
   
     {
@@ -208,7 +208,7 @@ womensSection = [
       description: "Short Handed Thobe Gray",
       price: 20,
       name : "Shortified Thobe",
-      img: "./images/MensClothing/greyShortThobe.jpg",
+      img: "./images/MensClothing/greyShortThobe.WEBP",
     },
   
     {
@@ -216,7 +216,7 @@ womensSection = [
       description: "Short Handed Thobe white",
       price: 20,
       name : "Shortified Thobe",
-      img: "./images/MensClothing/whiteshotThobe.jpg",
+      img: "./images/MensClothing/whiteshotThobe.WEBP",
     },
   
     {
@@ -224,7 +224,7 @@ womensSection = [
       description: "Stylish Black Juba Thobe",
       price: 40,
       name : "Juba Thobe",
-      img: "./images/MensClothing/blackJubba.jpg",
+      img: "./images/MensClothing/blackJubba.WEBP",
     },
   ];
   
