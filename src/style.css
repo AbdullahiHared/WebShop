@@ -31,9 +31,10 @@ header a {
 }
 
 .quote {
-  border-left: 1px solid #975252;
+
   text-align: center;
   margin-top: 0.625em;
+  font-size:2rem;
 }
 
 .cart {
@@ -55,6 +56,9 @@ header a {
   margin-top: 6.25em;
 }
 
+.description {
+  font-size:1rem;
+}
 .mensClothing,
 .womensClothing {
   display: grid;
